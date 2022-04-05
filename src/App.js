@@ -1,11 +1,11 @@
 import React from 'react'
-import { SplashScreen, GetStartedPage } from './pages'
 import { NavigationContainer } from '@react-navigation/native'
+import Router from './router'
 
 export default function App() {
   return (
     <NavigationContainer>
-      <GetStartedPage />
+      <Router />
     </NavigationContainer>
   )
 }

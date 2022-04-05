@@ -20,10 +20,10 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
   },
   title: {
-    fontWeight: '600',
     fontSize: 20,
     lineHeight: 27,
     color: '#112340',
     marginTop: 20,
+    fontFamily: 'Nunito-SemiBold'
   }
 })

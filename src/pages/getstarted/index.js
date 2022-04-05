@@ -29,9 +29,9 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 28,
     color: '#fff',
-    fontWeight: '600',
     marginTop: 91,
-    fontFamily: 'Nunito-SemiBold'
+    fontFamily: 'Nunito-SemiBold',
+    lineHeight: 33,
   },
   btnWrapper: {
     flex: 0.3,

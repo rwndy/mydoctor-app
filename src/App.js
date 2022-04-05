@@ -1,18 +1,11 @@
-import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { SplashScreen, GetStartedPage } from './pages'
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>App</Text>
-    </View>
+    <>
+      <GetStartedPage />
+    </>
   )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  }
-})

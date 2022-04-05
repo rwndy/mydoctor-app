@@ -3,7 +3,7 @@ import React from 'react'
 import { ILLogo, ILBg } from '../../assets'
 import { Button, Gap } from '../../components'
 
-export default function GetStartedPage() {
+export default function GetStartedPage({navigation}) {
   return (
     <ImageBackground source={ILBg} resizeMode="cover" style={styles.container}>
       <View>
@@ -12,9 +12,9 @@ export default function GetStartedPage() {
       </View>
 
       <View>
-        <Button title={'Get Started'} />
+        <Button title={'Get Started'} onPress={() => navigation.navigate('Register')} />
         <Gap height={16}/>
-        <Button type={'secondary'} title={'Sign In'}/>
+        <Button type={'secondary'} title={'Sign In'} onPress={() => navigation.replace('Login')}/>
       </View>
 
     </ImageBackground>

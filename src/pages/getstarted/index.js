@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, ImageBackground } from 'react-native'
 import React from 'react'
 import { ILLogo, ILBg } from '../../assets'
-import { Button } from '../../components'
+import { Button, Gap } from '../../components'
 
 export default function GetStartedPage() {
   return (
@@ -11,8 +11,9 @@ export default function GetStartedPage() {
         <Text style={styles.title}>Konsultasi dengan dokter jadi lebih mudah & fleksibel</Text>
       </View>
 
-      <View style={styles.btnWrapper}>
+      <View>
         <Button title={'Get Started'} />
+        <Gap height={16}/>
         <Button type={'secondary'} title={'Sign In'}/>
       </View>
 
@@ -33,8 +34,4 @@ const styles = StyleSheet.create({
     fontFamily: 'Nunito-SemiBold',
     lineHeight: 33,
   },
-  btnWrapper: {
-    flex: 0.3,
-    justifyContent: 'space-between',
-  }
 })

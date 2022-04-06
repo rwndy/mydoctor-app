@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, ImageBackground } from 'react-native'
 import React from 'react'
 import { ILLogo, ILBg } from '../../assets'
 import { Button, Gap } from '../../components'
+import { colors } from '../../utils'
 
 export default function GetStartedPage({navigation}) {
   return (
@@ -29,7 +30,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 28,
-    color: '#fff',
+    color: colors.white,
     marginTop: 91,
     fontFamily: 'Nunito-SemiBold',
     lineHeight: 33,

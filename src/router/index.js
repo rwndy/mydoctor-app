@@ -12,7 +12,7 @@ const Router = () => {
         component={SplashScreen} 
         options={
           {
-            headerShown: false
+            headerShown: false,
           }
         }
       />
@@ -30,7 +30,7 @@ const Router = () => {
         component={Login}
         options={
           {
-            headerShown: false
+            headerShown: false,
           }
         }
       />

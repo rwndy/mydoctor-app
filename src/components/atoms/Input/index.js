@@ -14,7 +14,7 @@ export default function InputComponent({label}) {
 const styles = StyleSheet.create({
   input: {
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: colors.border.primary,
     borderRadius: 10,
     paddingVertical: 11,
     paddingHorizontal: 12,

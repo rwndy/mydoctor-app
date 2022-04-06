@@ -4,10 +4,10 @@ import { Header, InputComponent, Button, Gap } from '../../components'
 import { colors } from '../../utils'
 
 
-export default function Register() {
+export default function Register({navigation}) {
   return (
     <View style={styles.container}>
-      <Header title={'Daftar Akun'} />
+      <Header title={'Daftar Akun'} onPress={() => navigation.goBack()}/>
      <View style={styles.content}>
      <Text>Register</Text>
       <InputComponent label="Full Name"/>

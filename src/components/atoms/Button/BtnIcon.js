@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
+import { TouchableOpacity } from 'react-native'
 import React from 'react'
 import { IconBack, IconLightBack } from '../../../assets'
 
@@ -23,5 +23,3 @@ export default function BtnIcon({onPress, icon}) {
     </TouchableOpacity>
   )
 }
-
-const styles = StyleSheet.create({})

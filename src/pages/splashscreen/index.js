@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React, { useEffect } from 'react'
 import { ILLogo } from '../../assets'
-import { colors } from '../../utils'
+import { colors, fonts } from '../../utils'
 
 
 export default function SplashScreen({navigation}) {
@@ -31,6 +31,6 @@ const styles = StyleSheet.create({
     lineHeight: 27,
     color: colors.text.primary,
     marginTop: 20,
-    fontFamily: 'Nunito-SemiBold',
+    fontFamily: fonts.primary[600],
   },
 })

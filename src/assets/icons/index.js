@@ -6,8 +6,8 @@ import IconDoctor from './icon-doctor.svg'
 import IconDoctorActive from './icon-doctor-active.svg'
 import IconMessage from './icon-message.svg'
 import IconMessageActive from './icon-messages-active.svg'
-import iconMap from './icon-map.svg'
-import IconMapActive from './icon-map-active.svg'
+import IconMap from './icon-map.svg'
+import IconMapActive from './icon-maps-active.svg'
 
 export {
   IconBack,
@@ -19,5 +19,5 @@ export {
   IconMapActive,
   IconMessage,
   IconMessageActive,
-  iconMap
+  IconMap
 }

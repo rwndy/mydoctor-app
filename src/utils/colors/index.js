@@ -9,6 +9,7 @@ const mainColors = {
 
 export const colors = {
   main: mainColors.green,
+  secondary: mainColors.darkBlue,
   white: '#fff',
   text: {
     primary: mainColors.darkBlue,

@@ -3,6 +3,7 @@ import BtnIcon from "./Button/BtnIcon";
 import Gap from "./Gap";
 import InputComponent from "./Input";
 import LinkComponent from "./Link";
+import TabItems from "./TabItems";
 
 
 export {
@@ -10,5 +11,6 @@ export {
   BtnIcon,
   Gap,
   InputComponent,
-  LinkComponent
+  LinkComponent,
+  TabItems
 }

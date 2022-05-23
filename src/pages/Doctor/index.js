@@ -40,7 +40,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     paddingVertical: 30,
     backgroundColor: '#fff',
-    flex: 1
+    flex: 1,
+    borderBottomLeftRadius: 20,
+    borderBottomRightRadius: 20 
   },
   header: {
     fontSize: 20,

@@ -5,6 +5,7 @@ const mainColors = {
   grey: '#E9E9E9',
   grey2: '#7D8797',
   grey3: '#EDEEF0',
+  blusky200: '#EDFCFD'
 };
 
 export const colors = {
@@ -28,5 +29,8 @@ export const colors = {
       background: '#fff',
       text: mainColors.darkBlue,
     }
+  },
+  background: {
+    main: mainColors.blusky200
   }
 };

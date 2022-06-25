@@ -7,23 +7,27 @@ const Doctor = () => {
   return (
     <View style={styles.page}>
       <View style={styles.content}>
-        <HomeProfile />
-        <Text style={styles.header}>Mau konsultasi dengan siapa hari ini?</Text>
-        <View style={styles.wrapperScroll}>
-          <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-            <View style={styles.category}>
-              <Gap width={16}/>
-                <DoctorCategory />
-                <DoctorCategory />
-                <DoctorCategory />
-                <DoctorCategory />
-              <Gap width={6}/>
-            </View>
+          <ScrollView showsVerticalScrollIndicator={false}>
+            <Gap height={30} />
+          <HomeProfile />
+          <Text style={styles.header}>Mau konsultasi dengan siapa hari ini?</Text>
+          <View style={styles.wrapperScroll}>
+            <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+              <View style={styles.category}>
+                <Gap width={16}/>
+                  <DoctorCategory />
+                  <DoctorCategory />
+                  <DoctorCategory />
+                  <DoctorCategory />
+                <Gap width={6}/>
+              </View>
 
-          </ScrollView>
-        </View>
-        <Text>Top Rated Doctors</Text>
-        <RatedDoctors />
+            </ScrollView>
+          </View>
+          <Text>Top Rated Doctors</Text>
+          <RatedDoctors />
+          <Gap height={30} />
+        </ScrollView>
       </View>
     </View>
   )
@@ -38,7 +42,6 @@ const styles = StyleSheet.create({
   },
   content: {
     paddingHorizontal: 16,
-    paddingVertical: 30,
     backgroundColor: '#fff',
     flex: 1,
     borderBottomLeftRadius: 20,

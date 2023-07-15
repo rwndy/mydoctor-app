@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, ScrollView } from 'react-native'
 import React from 'react'
-import { HomeProfile, DoctorCategory, RatedDoctors, Gap } from '../../components/'
+import { HomeProfile, DoctorCategory, RatedDoctors, Gap, NewsItem } from '../../components/'
 import { colors, fonts } from '../../utils'
 
 const Doctor = () => {
@@ -8,24 +8,34 @@ const Doctor = () => {
     <View style={styles.page}>
       <View style={styles.content}>
           <ScrollView showsVerticalScrollIndicator={false}>
-            <Gap height={30} />
-          <HomeProfile />
-          <Text style={styles.header}>Mau konsultasi dengan siapa hari ini?</Text>
+            <View style={styles.wrapperSection}>
+              <Gap height={30} />
+              <HomeProfile />
+              <Text style={styles.header}>Mau konsultasi dengan siapa hari ini?</Text>
+            </View>
           <View style={styles.wrapperScroll}>
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
               <View style={styles.category}>
-                <Gap width={16}/>
+                <Gap width={32}/>
                   <DoctorCategory />
                   <DoctorCategory />
                   <DoctorCategory />
                   <DoctorCategory />
-                <Gap width={6}/>
+                <Gap width={22}/>
               </View>
 
             </ScrollView>
           </View>
-          <Text>Top Rated Doctors</Text>
-          <RatedDoctors />
+          <View style={styles.wrapperSection}>
+            <Text style={styles.sectionLabel}>Top Rated Doctors</Text>
+            <RatedDoctors />
+            <RatedDoctors />
+            <RatedDoctors />
+            <Text style={styles.sectionLabel}>Good News</Text>
+          </View>
+            <NewsItem />
+            <NewsItem />
+            <NewsItem />
           <Gap height={30} />
         </ScrollView>
       </View>
@@ -41,7 +51,6 @@ const styles = StyleSheet.create({
     flex: 1
   },
   content: {
-    paddingHorizontal: 16,
     backgroundColor: '#fff',
     flex: 1,
     borderBottomLeftRadius: 20,
@@ -60,5 +69,15 @@ const styles = StyleSheet.create({
   },
   wrapperScroll: {
     marginHorizontal: -16
+  },
+  sectionLabel: {
+    fontSize: 16,
+    fontFamily: fonts.primary[600],
+    color: colors.text.primary,
+    marginTop: 30,
+    marginBottom: 16,
+  },
+  wrapperSection: {
+    paddingHorizontal: 16
   }
 })

@@ -1,14 +1,26 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { ILDoctUmum } from '../../../assets'
+import { ILDoctUmum, ILPsikiater, ILObat } from '../../../assets'
 import { colors, fonts } from '../../../utils'
 
-const DoctorCategory = () => {
+const DoctorCategory = ({item}) => {
+
+  const getIcon = () => {
+    switch(item.category) {
+      case 'psikiater':
+        return <ILPsikiater />
+      case 'medicines':
+        return <ILObat />
+      default:
+       return  <ILDoctUmum />
+    }
+  }
+
   return (
     <View style={styles.container}>
-      <ILDoctUmum />
+      { getIcon() }
         <Text style={styles.label}>Saya butuh</Text>
-        <Text style={styles.category}>Dokter Umum</Text>
+        <Text style={styles.category}>{item.name}</Text>
     </View>
   )
 }

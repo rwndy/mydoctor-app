@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "category": "general",
+            "name": "Dokter Umum"
+        },
+        {
+            "id": 2,
+            "category": "psikiater",
+            "name": "Psikiater"
+        },
+        {
+            "id": 3,
+            "category": "medicines",
+            "name": "Apoteker"
+        },
+        {
+            "id": 4,
+            "category": "general",
+            "name": "Dokter Bedah"
+        }
+    ]
+}

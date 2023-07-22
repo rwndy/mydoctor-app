@@ -1,23 +1,33 @@
 import { StyleSheet, Text, View, Image } from 'react-native'
 import React from 'react'
-import { Doct1 } from '../../../assets'
+import { Doct1, Doct2, Doct3 } from '../../../assets'
 import { Rating } from 'react-native-ratings'
 import { colors, fonts } from '../../../utils'
 
-const RatedDoctors = () => {
+const RatedDoctors = ({ item }) => {
+  const getDoctorProfile = () => {
+    switch(item.category) {
+      case 'dentist':
+        return Doct2
+      case 'podiatrist':
+        return Doct3
+      default:
+        return Doct1
+    }
+  }
   return (
     <View style={styles.container}>
-      <Image style={styles.profile} source={Doct1}/>
+      <Image style={styles.profile} source={getDoctorProfile()}/>
       <View style={styles.profiles}>
-        <Text style={styles.name}>Alexa Rachel</Text>
-        <Text style={styles.category}>Pediatrician</Text>
+        <Text style={styles.name}>{item.name}</Text>
+        <Text style={styles.category}>{item.category}</Text>
       </View>
       <View>
         <Rating 
         ratingCount={5} 
         readonly={true} 
         imageSize={16} 
-        ratingColor={'#F8B459'} 
+        ratingColor={'#F8B459'}
         />
       </View>
     </View>

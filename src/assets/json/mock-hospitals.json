@@ -1,0 +1,22 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "hospital_name": "Citra Bunga Merdeka",
+            "hospital_category": "general",
+            "address": "Jl. Surya Sejahtera 20"
+        },
+        {
+            "id": 2,
+            "hospital_name": "Happy Family & Kids",
+            "hospital_category": "child",
+            "address": "Jl. Surya Sejahtera 20"
+        },
+        {
+            "id": 3,
+            "hospital_name": "Dr. Soeharto Heerdjan Jakarta",
+            "hospital_category": "mental",
+            "address": "Jl. Surya Sejahtera 20"
+        }
+    ]
+}

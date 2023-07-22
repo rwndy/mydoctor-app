@@ -2,8 +2,11 @@ import { StyleSheet, Text, View, ImageBackground } from 'react-native'
 import React from 'react'
 import { Cover } from '../../assets'
 import { fonts, colors } from '../../utils'
+import { ListHospital } from '../../components'
+import { MockHospitals } from '../../assets'
 
 const Hospitals = () => {
+
   return (
     <View style={styles.page}>
         <ImageBackground source={Cover} style={styles.background}>
@@ -11,7 +14,13 @@ const Hospitals = () => {
           <Text style={styles.description}>3 tersedia</Text>
         </ImageBackground>
       <View style={styles.content}>
-        <Text>Hospitals</Text>
+        {
+          MockHospitals.data.map(hospital => {
+            return (
+              <ListHospital item={hospital} key={hospital.id}/>
+            )
+          })
+        }
       </View>
     </View>
   )
@@ -45,7 +54,8 @@ const styles = StyleSheet.create({
     backgroundColor: colors.white,
     flex: 1,
     borderRadius: 20,
-    marginTop: -30
+    marginTop: -30,
+    paddingTop: 14,
   }
 
 })

@@ -4,7 +4,7 @@ import { HomeProfile, DoctorCategory, RatedDoctors, Gap, NewsItem } from '../../
 import { colors, fonts } from '../../utils'
 import { MockDoctors, MockCategory, MockNews } from '../../assets'
 
-const Doctor = () => {
+const Doctor = ({navigation}) => {
   return (
     <View style={styles.page}>
       <View style={styles.content}>
@@ -21,7 +21,7 @@ const Doctor = () => {
                   {
                     MockCategory.data.map(category => {
                       return (
-                        <DoctorCategory item={category} key={category.id} />
+                        <DoctorCategory item={category} key={category.id} onPress={() => navigation.navigate('ChooseDoctor')}/>
                       )
                     })
                   }

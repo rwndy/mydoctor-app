@@ -6,6 +6,7 @@ import UploadImage from "./UploadImage"
 import Doctor from "./Doctor"
 import Hospitals from "./Hospitals"
 import Messages from "./Messages"
+import ChooseDoctor from "./ChooseDoctor"
 
 export {
   SplashScreen,
@@ -16,4 +17,5 @@ export {
   Doctor,
   Messages,
   Hospitals,
+  ChooseDoctor
 }

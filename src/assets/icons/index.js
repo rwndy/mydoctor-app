@@ -8,6 +8,7 @@ import IconMessage from './icon-message.svg'
 import IconMessageActive from './icon-messages-active.svg'
 import IconMap from './icon-map.svg'
 import IconMapActive from './icon-maps-active.svg'
+import IconRight from './icon-right.svg'
 
 export {
   IconBack,
@@ -19,5 +20,6 @@ export {
   IconMapActive,
   IconMessage,
   IconMessageActive,
-  IconMap
+  IconMap,
+  IconRight
 }

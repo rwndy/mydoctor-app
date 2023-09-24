@@ -4,15 +4,13 @@ import { IconBack, IconLightBack } from '../../../assets'
 
 export default function BtnIcon({onPress, icon}) {
   const changeIcons = () => {
-    switch (icon) {
-      case icon === 'dark':
-       return <IconBack />
-      case icon === 'light':
-      return <IconLightBack />
-    
-      default:
-        return <IconBack />
-    }
+   if (icon === "dark") {
+    return <IconBack />
+   }
+
+   if (icon === "light") {
+    return <IconLightBack />
+   }
   }
 
   return (

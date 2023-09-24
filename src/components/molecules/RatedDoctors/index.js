@@ -53,12 +53,12 @@ const styles = StyleSheet.create({
   name: {
     fontSize: 16,
     color: colors.text.primary,
-    fontWeight: fonts.primary[600],
+    fontWeight: "600",
   },
   category: {
     fontSize: 12,
     color: colors.text.secondary,
-    fontWeight: fonts.primary.normal,
+    fontWeight: "normal",
     marginTop: 2
   },
   profiles: {

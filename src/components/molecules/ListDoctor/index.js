@@ -1,10 +1,10 @@
-import { Text, StyleSheet, View, Image } from 'react-native'
+import { Text, StyleSheet, View, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { Doct4, Doct5, Doct6, Doct7, Doct8, IconRight } from '../../../assets'
 import { colors, fonts } from '../../../utils'
 
 
-export default function ListDoctor({ name, desc, id, type }) {
+export default function ListDoctor({ name, desc, id, type, onPress }) {
 
     const getAvatarDoctor = (id) => {
         switch (id) {
@@ -24,14 +24,14 @@ export default function ListDoctor({ name, desc, id, type }) {
     }
 
   return (
-    <View style={styles.container}>
+    <TouchableOpacity style={styles.container} onPress={onPress}>
         <Image source={getAvatarDoctor(id)} style={styles.avatar}/>
         <View style={styles.content}>
             <Text style={styles.name}>{name}</Text>
             <Text>{desc}</Text>
         </View>
           { type === 'next' && <IconRight />}
-    </View>
+    </TouchableOpacity>
   )
 }
 
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     },
     name: {
         fontSize: 16,
-        fontWeight: fonts.primary.normal,
+        fontWeight: "400",
         color: colors.text.primary,
     },
     description: {

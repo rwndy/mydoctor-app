@@ -2,18 +2,23 @@ import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 import React from 'react';
 import { colors, fonts } from '../../../utils';
 import BtnIcon from './BtnIcon';
+import ButtonChat from './ButtonChat';
 
-export default function Button({type, title, onPress, icon}) {
+export default function Button({type, title, onPress, icon, disable}) {
+
+  if (type === 'btn-send') {
+    return <ButtonChat disable={disable}/>
+  }
+
+  if ( type === 'icon') {
+    return  <BtnIcon icon={icon} onPress={onPress}/>
+  }
 
   return (
-   <>
-    {
-      type === 'icon' ? <BtnIcon icon={icon} onPress={onPress}/> :  
+    
       <TouchableOpacity style={styles.container(type)} onPress={onPress}>
         <Text style={styles.textButton(type)}>{title}</Text>
       </TouchableOpacity>
-    }
-   </>
   );
 }
 

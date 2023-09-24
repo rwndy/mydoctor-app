@@ -9,6 +9,8 @@ import IconMessageActive from './icon-messages-active.svg'
 import IconMap from './icon-map.svg'
 import IconMapActive from './icon-maps-active.svg'
 import IconRight from './icon-right.svg'
+import IconSendActive from './icon-send-active.svg'
+import IconSendDisable from './icon-send-disabled.svg'
 
 export {
   IconBack,
@@ -21,5 +23,7 @@ export {
   IconMessage,
   IconMessageActive,
   IconMap,
-  IconRight
+  IconRight,
+  IconSendActive,
+  IconSendDisable,
 }

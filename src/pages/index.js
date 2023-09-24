@@ -7,6 +7,7 @@ import Doctor from "./Doctor"
 import Hospitals from "./Hospitals"
 import Messages from "./Messages"
 import ChooseDoctor from "./ChooseDoctor"
+import Chatting from "./Chatting"
 
 export {
   SplashScreen,
@@ -17,5 +18,6 @@ export {
   Doctor,
   Messages,
   Hospitals,
-  ChooseDoctor
+  ChooseDoctor,
+  Chatting,
 }

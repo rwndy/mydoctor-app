@@ -8,7 +8,7 @@ const mainColors = {
   blusky200: '#EDFCFD',
   darkBlue2: '#8092AF',
   grey4: '#EDEEF0',
-  blue: '#0066CB'
+  blue: '#0066CB',
 };
 
 export const colors = {

@@ -8,6 +8,8 @@ import ListDoctor from "./ListDoctor"
 import ListHospital from "./ListHospital"
 import ChatItem from "./ChatItem"
 import InputChat from "./InputChat"
+import Self from "./ChatItem/Self"
+import DoctorChat from "./ChatItem/DoctorChat"
 
 export {
   Header,
@@ -20,4 +22,6 @@ export {
   ListHospital,
   ChatItem,
   InputChat,
+  Self,
+  DoctorChat,
 }

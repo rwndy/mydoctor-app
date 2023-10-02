@@ -13,9 +13,8 @@ const Chatting = ({ route }) => {
     <View style={styles.page}>
       <Header title={detailChildrenDoctor.name} type="header-profile"/>
       <View style={styles.content}>
-        <Text style={styles.chatDate}>Chatting</Text>
-        <ChatItem />
-        <ChatItem />
+        <Text style={styles.chatDate}>Senin, 22 Maret 2023</Text>
+        <ChatItem isMe/>
         <ChatItem />
       </View>
         <InputChat />

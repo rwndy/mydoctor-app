@@ -4,14 +4,14 @@ import { Header, ChatItem, InputChat } from '../../components/molecules'
 import { MockChildrenDoctor } from '../../assets'
 import { colors, fonts } from '../../utils'
 
-const Chatting = ({ route }) => {
+const Chatting = ({ route, navigation }) => {
   const id = route?.params?.id
   const listDoctorChildren = MockChildrenDoctor.data
 
   const detailChildrenDoctor = listDoctorChildren.find(doctor => doctor.id === id)
   return (
     <View style={styles.page}>
-      <Header title={detailChildrenDoctor.name} type="header-profile"/>
+      <Header title={detailChildrenDoctor.name} type="header-profile" onPress={() => navigation.goBack()}/>
       <View style={styles.content}>
         <Text style={styles.chatDate}>Senin, 22 Maret 2023</Text>
         <ChatItem isMe/>

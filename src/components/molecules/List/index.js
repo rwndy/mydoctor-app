@@ -1,10 +1,10 @@
 import { Text, StyleSheet, View, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
-import { Doct4, Doct5, Doct6, Doct7, Doct8, IconRight } from '../../../assets'
+import { Doct4, Doct5, Doct6, Doct7, Doct8, IconDescription, IconEditProfile, IconRating, IconRight, IconTranslate } from '../../../assets'
 import { colors, fonts } from '../../../utils'
 
 
-export default function ListDoctor({ name, desc, id, type, onPress }) {
+export default function List({ name, desc, id, type, onPress, icon }) {
 
     const getAvatarDoctor = (id) => {
         switch (id) {
@@ -23,9 +23,26 @@ export default function ListDoctor({ name, desc, id, type, onPress }) {
         }
     }
 
+    const Icons = () => {
+      switch(icon) {
+        case "edit-profile":
+          return <IconEditProfile />
+        case "translate":
+          return <IconTranslate />
+        case "rating":
+          return <IconRating />
+        case "description":
+          return <IconDescription />
+        default:
+          return <IconEditProfile />
+      }
+    }
+
   return (
     <TouchableOpacity style={styles.container} onPress={onPress}>
-        <Image source={getAvatarDoctor(id)} style={styles.avatar}/>
+        { 
+          icon ? <Icons /> : <Image source={getAvatarDoctor(id)} style={styles.avatar}/>
+        }
         <View style={styles.content}>
             <Text style={styles.name}>{name}</Text>
             <Text>{desc}</Text>
@@ -48,7 +65,6 @@ const styles = StyleSheet.create({
         width: 46,
         height: 46,
         borderRadius: 46 / 2,
-        marginRight: 12
     },
     name: {
         fontSize: 16,
@@ -61,6 +77,7 @@ const styles = StyleSheet.create({
         color: colors.text.secondary,
     },
     content: {
-      flex: 1
+      flex: 1,
+      marginLeft: 16,
     }
 })

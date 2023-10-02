@@ -4,12 +4,13 @@ import HomeProfile from "./HomeProfile"
 import DoctorCategory from "./DoctorCategory"
 import RatedDoctors from "./RatedDoctors"
 import NewsItem from "./NewsItem"
-import ListDoctor from "./ListDoctor"
+import List from "./List"
 import ListHospital from "./ListHospital"
 import ChatItem from "./ChatItem"
 import InputChat from "./InputChat"
 import Self from "./ChatItem/Self"
 import DoctorChat from "./ChatItem/DoctorChat"
+import Profile from "./Profile"
 
 export {
   Header,
@@ -18,10 +19,11 @@ export {
   DoctorCategory,
   RatedDoctors,
   NewsItem,
-  ListDoctor,
+  List,
   ListHospital,
   ChatItem,
   InputChat,
   Self,
   DoctorChat,
+  Profile,
 }

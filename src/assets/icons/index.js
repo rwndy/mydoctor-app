@@ -11,6 +11,10 @@ import IconMapActive from './icon-maps-active.svg'
 import IconRight from './icon-right.svg'
 import IconSendActive from './icon-send-active.svg'
 import IconSendDisable from './icon-send-disabled.svg'
+import IconRating from './ic-rating.svg'
+import IconTranslate from './ic-translate.svg'
+import IconDescription from './ic-description.svg'
+import IconEditProfile from './ic-edit-profile.svg'
 
 export {
   IconBack,
@@ -26,4 +30,8 @@ export {
   IconRight,
   IconSendActive,
   IconSendDisable,
+  IconDescription,
+  IconRating,
+  IconTranslate,
+  IconEditProfile,
 }
